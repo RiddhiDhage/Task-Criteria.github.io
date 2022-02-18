@@ -66,7 +66,9 @@ header .container {
 }
 .div2{
     background-color: #f2f4f6;
+    margin-top: 50px;
     padding-bottom: 80px;
+    padding-top: 50px;
 }
 .div2imggrid{
     display: flex;
@@ -124,8 +126,83 @@ header .container {
     line-height: 1.2;
     margin-bottom: 0.35em;
 }
-@media(max-width:1190px) {
+.divfooter{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    background-color: #002554;
+    height: 100%px;
+}
+
+.brands {
+    width: 100%;
     
+    padding-bottom: 90px
+}
+
+.brands_slider_container {
+    height: 130px;
+    
+    
+    padding-left: 97px;
+    padding-right: 97px;
+    
+}
+
+.brands_slider {
+    height: 100%;
+    
+}
+
+.brands_item {
+    height: 100%
+}
+
+.brands_item img {
+    width: 150px;
+    height: 150px
+}
+
+.brands_nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 5px;
+    cursor: pointer
+}
+
+.brands_nav i {
+    color: #e5e5e5;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease
+}
+
+.brands_nav:hover i {
+    color: #676767
+}
+
+.brands_prev {
+    left: 40px
+}
+
+.brands_next {
+    right: 40px
+}
+.footcols{
+    padding-left: 120px;
+}
+
+@media(max-width:1070px) {
+    .footcols{
+        padding-left: 70px;
+    }   
  }
 
 @media screen and (max-width: 1200px)
@@ -156,10 +233,18 @@ header .container {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .footer-informational {
+        width: 50%;
+    }
 }
 @media screen and (max-width: 900px){
     .div4imggrid {
         padding-left: 30px;
         padding-right: 30px;
+    }
+   
+    .footer-informational > div > div {
+        width: 50%;
+        padding-top: 30px;
     }
 }
